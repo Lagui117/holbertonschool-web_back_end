@@ -50,10 +50,10 @@ class Server:
 
         Args:
             page: The page number (must be an integer > 0)
-            page_size: The number of items per page (must be an integer > 0)
+            page_size: The number of items per page (must be > 0)
 
         Returns:
-            A list of rows for the requested page, or empty list if out of range
+            A list of rows for the requested page, or empty list
         """
         assert isinstance(page, int) and page > 0
         assert isinstance(page_size, int) and page_size > 0
