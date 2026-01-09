@@ -10,3 +10,5 @@ router.get('/students/:major', StudentsController.getAllStudentsByMajor);
 
 export default router;
 
+
+
